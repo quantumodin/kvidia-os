@@ -59,6 +59,9 @@ modules:
           - org.gnome.Lollypop
           - org.gnome.Shotwell
           - io.github.celluloid_player.Celluloid
+        
+        remove:
+          - io.github.kolunmi.Bazaar
 
       - scope: user # Also add Flathub user repo, but no user packages
 
