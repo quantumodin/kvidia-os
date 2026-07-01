@@ -37,7 +37,6 @@ modules:
         - git
         - waydroid
         - steam-devices
-        - brew
         - code
 
     remove:
