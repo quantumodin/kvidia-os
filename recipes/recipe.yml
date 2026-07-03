@@ -25,20 +25,26 @@ modules:
         - atim/starship
     install:
       packages:
-        - fish
-        - starship
+        # fonts
         - google-noto-fonts-all
         - google-noto-fonts-all-vf
+
+        # plasma themes
         - oxygen-icon-theme
         - plasma-oxygen
+
+        # shell/terminal
+        - fish
+        - starship
         - vim
         - fastfetch
-        - distrobox
         - git
+
+        # misc
+        - code
+        - distrobox
         - waydroid
         - steam-devices
-        - code
-
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
