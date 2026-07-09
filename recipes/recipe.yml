@@ -47,10 +47,8 @@ modules:
         - steam-devices
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox-langpacks
         - toolbox
 
   - type: default-flatpaks
@@ -65,11 +63,19 @@ modules:
           - org.kde.gwenview
           - io.github.celluloid_player.Celluloid
           - io.github.DenysMb.Kontainer
+          - com.valvesoftware.Steam
         
         remove:
           - io.github.kolunmi.Bazaar
 
       - scope: user # Also add Flathub user repo, but no user packages
+
+  # Brew
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
+    auto-update: true
+    auto-upgrade: true
 
   # Enable/disable system services expected for this image.
   - type: systemd
