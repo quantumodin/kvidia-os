@@ -36,7 +36,6 @@ modules:
         # shell/terminal
         - fish
         - starship
-        - vim
         - fastfetch
         - git
 
